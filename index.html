@@ -7,48 +7,49 @@
     <title>Alura Books</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <div class="container">
-            <input hidden type="checkbox"" id=" menu" class="container__botao">
+            <input hidden type="checkbox"" id="menu" class="container_botao">
             <label for="menu">
-                <span class="cabecalho_menu-hamburguer container__imagem"></span>
+                <span class="cabecalho_menu-hamburguer container_imagem"></span>
             </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="#">PROGRAMAÇÃO</a>
+            <ul class="lista_menu">
+                <li class="lista_menu-titulo">Categorias</li>
+                <li class="lista_menu-item">
+                    <a class="lista_menu-link" href="#">PROGRAMAÇÃO</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="#">FRONTEND</a>
+                <li class="lista_menu-item">
+                    <a class="lista_menu-link" href="#">FRONTEND</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="#">INFRAESTRUTURA</a>
+                <li class="lista_menu-item">
+                    <a class="lista_menu-link" href="#">INFRAESTRUTURA</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="#">BUSINESS</a>
+                <li class="lista_menu-item">
+                    <a class="lista_menu-link" href="#">BUSINESS</a>
                 </li>
-                <li class="lista-menu__item">
-                    <a class="lista-menu__link" href="#">DESIGN & UX</a>
+                <li class="lista_menu-item">
+                    <a class="lista_menu-link" href="#">DESIGN & UX</a>
                 </li>
             </ul>
-            <img class="container__imagem" src="assents/logo.svg" alt="Logo do Alura Books">
+            <img class="container_imagem" src="assents/logo.svg" alt="Logo do Alura Books">
         </div>
         <div class="container">
-            <a href="#"><img class="container__imagem" src="assents/favoritos.svg" alt="Meus favoritos"></a>
-            <a href="#"><img class="container__imagem" src="assents/compras.svg" alt="Carrinho de compras"></a>
-            <a href="#"><img class="container__imagem" src="assents/usuario.svg" alt="Meu perfil"></a>
+            <a href="#"><img class="container_imagem" src="assents/favoritos.svg" alt="Meus favoritos"></a>
+            <a href="#"><img class="container_imagem" src="assents/compras.svg" alt="Carrinho de compras"></a>
+            <a href="#"><img class="container_imagem" src="assents/usuario.svg" alt="Meu perfil"></a>
         </div>
     </header>
+
     <section class="banner">
         <h2 class="banner_titulo">Já sabe por onde começar?</h2>
         <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <!-- <img src="assents/lupa.svg" alt="Lupa de pesquisa"> -->
         <input type="search" class="banner_pesquisa" placeholder="Qual sera sua próxima leitura?">
     </section>
+
     <section class="carrossel">
         <h2 class="carrossel_titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
@@ -74,13 +75,13 @@
         </div>
 
         <div class="card">
-            <div class="card_description">
-                <div class="description">
-                    <h3 class="description_title">Talvez você também se interesse por...</h3>
-                    <h2 class="description_title-book">Angular 11 e Firebase</h2>
-                    <p class="description_text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <div class="card_descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao_texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
                 </div>
-                <img class="description_image" src="assents/angular.svg" alt="Logo do Angular">
+                <img class="descricao_imagem" src="assents/angular.svg" alt="Logo do Angular">
             </div>
             <div class="card_botoes">
                 <ul class="botoes">
@@ -98,12 +99,15 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide"><img src="assents/angula11.svg" alt="Livro sobre Angular 11 do Alura Books"></div>
-                <div class="swiper-slide"><img src="assents/guia-frontend.svg" alt="Livro Guia de Front-end do Alura Books">
+                <div class="swiper-slide"><img src="assents/angula11.svg" alt="Livro sobre Angular 11 do Alura Books">
+                </div>
+                <div class="swiper-slide"><img src="assents/guia-frontend.svg"
+                        alt="Livro Guia de Front-end do Alura Books">
                 </div>
                 <div class="swiper-slide"><img src="assents/javascript.svg" alt="Livro sobre JavaScript do Alura Books">
                 </div>
-                <div class="swiper-slide"><img src="assents/acessibilidade.svg" alt="Livro sobre Acessinilidade do Alura Boooks"></div>
+                <div class="swiper-slide"><img src="assents/acessibilidade.svg"
+                        alt="Livro sobre Acessinilidade do Alura Boooks"></div>
                 <div class="swiper-slide"><img src="assents/mean.svg" alt="Livro sobre Mean do Alura Books"></div>
             </div>
 
@@ -113,14 +117,15 @@
         </div>
 
         <div class="card">
-            <div class="card_description">
-                <div class="description">
-                    <img class="description_image-estrelinha" src="assents/estrelinhas.svg" alt="Estrelinhas">
-                    <h3 class="description_title">Autora do Mês</h3>
-                    <h2 class="description_title-book">Juliana Agarikov</h2>
-                    <p class="description_text">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            <div class="card_descricao">
+                <div class="descricao">
+                    <img class="descricao_imagem-estrelinha" src="assents/estrelinhas.svg" alt="Estrelinhas">
+                    <h3 class="descricao_titulo">Autora do Mês</h3>
+                    <h2 class="descricao_titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao_text-">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                    </p>
                 </div>
-                <img class="description_image" src="assents/escritora.svg" alt="Foto da Juliana Agarikov">
+                <img class="descricao_imagem" src="assents/escritora.svg" alt="Foto da Juliana Agarikov">
             </div>
             <div class="card_botoes">
                 <ul class="botoes">
@@ -161,12 +166,15 @@
             </li>
         </ul>
     </section>
+
     <section class="contato">
         <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
         <p class="contato_texto">Atualizações de e-books, novos livros, promoções e outros.</p>
         <input class="contato_email" type="email" placeholder="Cadastre seu e-mail">
     </section>
+
     <hr>
+
     <footer>
         Desenvolvido por Pedro
     </footer>

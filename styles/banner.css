@@ -26,10 +26,10 @@
 }
 
 .banner_pesquisa::placeholder {
+    background: url(/assents/lupa.svg) no-repeat;
+    background-position: 1em;
     color: var(--white);
     font-family: var(--font-poppins);
     font-size: 14px;
     font-weight: 400;
-    background: url(/assents/lupa.svg) no-repeat;
-    background-position: 1em;
 }
